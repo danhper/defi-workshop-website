@@ -1,0 +1,292 @@
+{
+  "name": "DeFi'21",
+  "config": {
+    "default_track_locations": [
+      {
+        "name": "Enter a location"
+      }
+    ],
+    "default_talk_minutes": 25,
+    "unassigned_talks": [
+      {
+        "name": "Uncategorized",
+        "talks": [],
+        "id": "category-0"
+      },
+      {
+        "id": "category-20",
+        "name": "MEV/DEX arbitrage, frontrunning",
+        "talks": []
+      },
+      {
+        "id": "category-21",
+        "name": "Protocol Design",
+        "talks": []
+      }
+    ],
+    "uniqueIDIndex": 31,
+    "timezone": {
+      "name": "UTC",
+      "abbr": "UTC"
+    }
+  },
+  "days": [
+    {
+      "date": "2021-03-05",
+      "timeslots": [
+        {
+          "endtime": "14:30",
+          "starttime": "14:00",
+          "sessions": [
+            {
+              "session_title": "Welcome and Keynote Introduction",
+              "location": {
+                "name": "Location TBD"
+              },
+              "id": "session-1",
+              "talks": [
+                {
+                  "id": "talk-22",
+                  "title": "Mariano Conti",
+                  "authors": [
+                    ""
+                  ],
+                  "affiliations": "ex MakerDAO",
+                  "starttime": "14:05"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "endtime": "14:50",
+          "starttime": "14:30",
+          "sessions": [
+            {
+              "moderator": "Chair: TBD",
+              "session_title": "Protocol Design",
+              "talks": [
+                {
+                  "id": "talk-19",
+                  "title": "Optimal Fees for Geometric Mean Market Makers",
+                  "authors": [
+                    "Alexander Evans",
+                    "Guillermo Angeris",
+                    "Tarun Chitra"
+                  ],
+                  "affiliations": "Placeholder VC; Stanford University; Gauntlet",
+                  "starttime": "14:30"
+                },
+                {
+                  "id": "talk-18",
+                  "title": "Market Based Mechanisms for Incentivising Exchange Liquidity Provision",
+                  "authors": [
+                    "Witold Gawlikowicz",
+                    "Barney Mannerings",
+                    "Tamlyn Rudolph",
+                    "David Siska"
+                  ],
+                  "affiliations": "Vega Protocol; University of Edinburgh",
+                  "starttime": "14:40"
+                }
+              ],
+              "id": "session-8"
+            }
+          ]
+        },
+        {
+          "starttime": "14:50",
+          "endtime": "15:00",
+          "sessions": [
+            {
+              "id": "session-23",
+              "session_title": "Lightning Talks I"
+            }
+          ]
+        },
+        {
+          "starttime": "15:00",
+          "endtime": "15:20",
+          "sessions": [
+            {
+              "id": "session-24",
+              "session_title": "Break and informal questions in rooms"
+            }
+          ]
+        },
+        {
+          "endtime": "15:40",
+          "starttime": "15:20",
+          "sessions": [
+            {
+              "session_title": "Protocol Design II",
+              "id": "session-9",
+              "talks": [
+                {
+                  "id": "talk-17",
+                  "title": "Understand Volatility of Algorithmic Stablecoin: Modeling, Verification and Empirical Analysis",
+                  "authors": [
+                    "Wenqi Zhao",
+                    "Hui Li",
+                    "Yuming Yuan"
+                  ],
+                  "affiliations": "Huobi Researach",
+                  "starttime": "15:20"
+                },
+                {
+                  "id": "talk-13",
+                  "title": "Measuring Asset Composability as a Proxy for Ecosystem Integration",
+                  "authors": [
+                    "Victor von Wachter",
+                    "Johannes Rude Jensen",
+                    "Omri Ross"
+                  ],
+                  "affiliations": "University of Copenhagen, Department of Computer Science",
+                  "starttime": "15:30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "starttime": "15:40",
+          "endtime": "16:00",
+          "sessions": [
+            {
+              "id": "session-26",
+              "session_title": "Formal attack analysis",
+              "talks": [
+                {
+                  "id": "talk-11",
+                  "title": "Formal Analysis of Composable DeFi Protocols",
+                  "authors": [
+                    "Palina Tolmach, Yi Li, Shang-Wei Lin",
+                    "Yang Liu"
+                  ],
+                  "affiliations": "",
+                  "starttime": "15:40"
+                },
+                {
+                  "id": "talk-14",
+                  "title": "How to Exploit a DeFi Project",
+                  "authors": [
+                    "Xinyuan Sun",
+                    "Shaokai Lin",
+                    "Vilhelm Sjoberg",
+                    "Jay Jie"
+                  ],
+                  "affiliations": "CertiK; University of California, Berkeley",
+                  "starttime": "15:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "endtime": "16:10",
+          "starttime": "16:00",
+          "sessions": [
+            {
+              "session_title": "Lightning Talks II",
+              "id": "session-10"
+            }
+          ]
+        },
+        {
+          "starttime": "16:10",
+          "endtime": "16:30",
+          "sessions": [
+            {
+              "id": "session-25",
+              "session_title": "Break and questions in discussion rooms"
+            }
+          ]
+        },
+        {
+          "starttime": "16:30",
+          "endtime": "16:50",
+          "sessions": [
+            {
+              "id": "session-27",
+              "session_title": "Invited speaker",
+              "talks": [
+                {
+                  "id": "talk-28",
+                  "title": "Raphael Auer",
+                  "authors": [
+                    ""
+                  ],
+                  "affiliations": "Bank for International Settlements",
+                  "starttime": "16:30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "starttime": "16:50",
+          "endtime": "17:20",
+          "sessions": [
+            {
+              "id": "session-29",
+              "session_title": "MEV and frontrunning",
+              "talks": [
+                {
+                  "id": "talk-12",
+                  "title": "Project Wallfacer: Demystifying Generalized Frontrunning Bots",
+                  "authors": [
+                    "Alex Manuskin"
+                  ],
+                  "affiliations": "ZenGo-X",
+                  "starttime": "16:50"
+                },
+                {
+                  "id": "talk-15",
+                  "title": "Taming MEV - Implementing a policy framework for transaction orders on blockchains",
+                  "authors": [
+                    "Klaus Kursawe"
+                  ],
+                  "affiliations": "",
+                  "starttime": "17:00"
+                },
+                {
+                  "id": "talk-16",
+                  "title": "Cyclic Arbitrage in Decentralized Exchange Markets",
+                  "authors": [
+                    "Ye Wang",
+                    "Yan Chen",
+                    "Shuiguang Deng",
+                    "Roger Wattenhofer"
+                  ],
+                  "affiliations": "",
+                  "starttime": "17:10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "starttime": "17:20",
+          "endtime": "17:30",
+          "sessions": [
+            {
+              "id": "session-30",
+              "session_title": "Lightning Talks III"
+            }
+          ]
+        },
+        {
+          "starttime": "17:30",
+          "endtime": "18:15",
+          "sessions": [
+            {
+              "id": "session-31",
+              "session_title": "PANEL"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "database_id": "409"
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/favicon.png"/>
+
+    <!-- Generic bootstrap -->
+    <link href="https://iacr.org/libs/css/bootstrap/confv2/css/bootstrap.min.css" rel="stylesheet" >
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link id="style" rel="stylesheet" href="/styles/teal_theme.css">
+    <!-- metadata for googlebot -->
+    <script type="application/ld+json">
+     {
+       "@id": "https://fc21.ifca.ai/",
+       "@context": "http://schema.org/",
+       "@type": "Event",
+       "startDate": "Mar 5 2021",
+       "endDate":  "Mar 5 2021",
+       "organizer": {
+         "@context": "http://schema.org",
+         "@type": "NGO",
+         "legalName": "International Financial Cryptography Association",
+         "alternateName": "IFCA",
+         "sameAs": "https://ifca.ai/",
+         "naics": "813920",
+         "logo": "https://fc21.ifca.ai/images/fc/ifca-logo.png"
+       },
+       "name": "DeFi21",
+       "image": "https://fc21.ifca.ai/images/fc/ifca-logo.png"
+     }
+    </script>
+    <!-- open graph for facebook. There is no type for event. -->
+    <meta property="og:type" content="event"/>
+    <meta property="og:url" content="https://fc21.ifca.ai/defi"/>
+    <meta property="event:start_time" content="Mar 5 2021"/>
+    <meta property="event:end_time" content="Mar 5 2021"/>
+    <meta property="og:image" content="https://fc21.ifca.ai/images/fc/ifca-logo.png"/>
+    <!-- apple format for iMessage and search -->
+    <link rel="apple-touch-icon" href="https://fc21.ifca.ai/images/fc/ifca-logo.png"/>
+    <meta property="og:title" content="DeFi'21 program"/>
+    <meta name="twitter:title" content="DeFi'21 program"/>
+    <meta property="og:description" content="Program of the 1st Workshop on Decentralized Finance" />
+
+    <title>
+      FC21 Program
+    </title>
+    <style>
+     .session {
+       padding: 1rem;
+       background-color: rgba(177, 181, 231, 0.3);
+       margin-bottom: 8px;
+       margin-top: 8px;
+       text-align: center;
+       border-radius: 8px;
+     }
+     ul.nav .nav-link:hover {
+       background-color: #eeeeee;
+     }
+     div.dropdown-menu.calendar {
+       background-color: white;
+     }
+     div.dropdown-menu.calendar a {
+       color: #102a83;
+     }
+     /* TODO: better color? */
+     .specialSession {
+       background-color: cornsilk;
+     }
+     a.toggle-open:after {
+       content:' -';
+       font-weight: 800;
+     }
+     a.toggle-closed:after {
+       content: " ›";
+       font-weight: 800;
+     }
+     #scrollButtons {
+       width: 2rem;
+       position: sticky;
+       left: 0;
+       margin-left: -1.2rem;
+       bottom: 1.3rem;
+     }
+     #scrollSessionButton {
+/*       display: none;*/
+     }
+     /* This was added to make it scroll below the
+        fixed top nav of the teal style. */
+     .timeSlotDiv {
+       scroll-margin-top: 5rem;
+       scroll-snap-margin-top: 5rem; /* because of iOS */
+     }
+     span.title {
+       font-weight: 600;
+     }
+     span.aff, span.author {
+       font-style: italic;
+     }
+    </style>
+  </head>
+  <body>
+    <!-- BEGIN nav -->
+<div id="pageTop">
+   <header id="conf_id" class="headerImg">
+     <div class="headerGradient">
+        <div class="pageTopContainer">
+          <div id="titlesLogoDiv" class="d-flex justify-content-between align-items-center">
+            <div class="headerConferenceName">
+              <h1 class="headerTitle">
+                1st Workshop on <br>Decentralized Finance (DeFi)</h1>
+            </div>
+            <div class="headerInfo">
+              <a href="https://ifca.ai/">
+                <img id="logo" class="d-none d-md-block mx-auto" src="images/fc/IFCA.png" title="International Financial Cryptography Association">
+              </a>
+              <h3 class="headerInfoTop">
+                March 5 2021, Virtual
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--      <div class="headerAttribution"></div>-->
+    </header>
+    <div id="main-nav-row" class="sticky-top">
+      <nav class="container navbar navbar-expand-md">
+        <button class="navbar-toggler mt-1 collapsed nofocus" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+          <ul id="nav-ul" class="navbar-nav">
+            <li class="nav-item mt-4 mt-md-0">
+              <a class="nav-link" href="https://fc21.ifca.ai/">FC 21</a>
+            </li>
+            <li class="nav-item mt-4 mt-md-0">
+              <a class="nav-link" href="/">Workshop Info</a>
+            </li>
+            <li class="nav-item mt-4 mt-md-0">
+              <a class="nav-link" href="/program.html">Program</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</div>
+    <noscript>
+      <div class="container">
+        <h2>
+          This site is designed for browsers with javascript.
+        </h2>
+      </div>
+    </noscript>
+    <!-- END OF nav -->
+
+    <main class="container p-4">
+      <h2 class="indPageTitle">
+        Program
+      </h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p class="alert customAlert-cool">
+            This program is preliminary and subject to change.
+            Links to papers, videos, live sessions, and chat will be added as they become available. Additional social activities may also be added. We encourage you to check the program frequently.
+            <!-- <br><br>
+            The papers are available at
+            <a target="_blank" href="https://link.springer.com/book/10.1007/978-3-030-56784-2">Volume I</a>,
+            <a target="_blank" href="https://link.springer.com/book/10.1007/978-3-030-56880-1">Volume II</a>, and
+            <a target="_blank" href="https://link.springer.com/book/10.1007/978-3-030-56877-1">Volume III</a>.
+            Links to individual papers are below, but they will not work until you first
+            <a href="https://link.springer.com/book/10.1007/978-3-030-56877-1">click here</a> to set a cookie from Springer.
+            After the conference, IACR members may also
+            access the papers by <a href="https://iacr.org/publications/access.php">logging as an IACR member</a>. -->
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p class="alert customAlert-cool">
+            Your timezone appears to be <span id="timezone"></span>. Times in the schedule are shown in your local timezone. <strong>Note that dates are in UTC; this may be inconsistent with the date in your time zone!</strong>
+            <br><br>
+            If the times seem inconvenient, keep in mind that this is an international conference with a Caribbean-centric schedule.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div id="renderedProgram" class="col-12">
+          <h4 class="text-center">
+           Loading...
+          </h4>
+        </div>
+      </div>
+      <div id="scrollButtons">
+        <img title="current session" id="scrollSessionButton" onclick="scrollToSession();" src="images/icons/time-outline.svg">
+        <img onclick="window.scrollTo({top: 0,left: 0, behavior: 'smooth'})" src="images/icons/arrow-up-circle-outline.svg">
+      </div>
+        <!-- Handlebars script that will render the program template based on the program.json file -->
+        <script id="program-template" type="text/x-handlebars-template">
+          <div class="mb-3" role="navigation">
+            <ul class="nav nav-tabs nav-justified">
+              {{#each days}}
+              <li role="presentation" class="nav-item">
+                <a href="#day-{{date}}" class="nav-link">
+                  {{formatDate date}}
+                </a>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+
+          {{#each days}}
+            <div class="row" id="day-{{date}}">
+              <div class="col-12 mb-3">
+                {{#if @first}}
+                {{else}}
+                <hr />
+                {{/if}}
+                <h3 class="pageSubtitle">
+                  {{localdate}}
+                  <br class="d-sm-none">
+                  <small>(in your timezone)</small>
+                </h3>
+              </div>
+            </div>
+            {{#each timeslots}}
+              <div class="row align-items-center timeSlotDiv" id="{{id}}">
+                <div class="col-sm-4 col-lg-2">
+                  <p class="timeSlot text-center" title="{{@root/config/timezone/abbr}}: {{../date}} {{starttime}}-{{endtime}}">
+                    {{localstarttime}} <br>to<br> {{localendtime}}<br>
+                  <small class="text-center">({{@root/config/timezone/abbr}}: {{starttime}}-{{endtime}})</small>
+                  </p>
+                </div>
+
+                <div class="col-sm-8 col-lg-10">
+                  <div class="row">
+                    {{#each sessions}}
+                    <!-- class for session is based on the number of parallel sessions -->
+                    <div class="{{sessionClass ../sessions}}">
+                      <div class="session">
+                        <h5 id="{{id}}">
+                          {{session_title}}
+                          {{#if info_url}}
+                          &nbsp; <a target="instructions" title="Session information" href="{{info_url}}"><img class="sessionInfoIcon" src="images/icons/info.svg"></a>
+                          {{/if}}
+                          {{#if calendar}}
+                          <div class="ml-3 text-right dropdown d-inline-block">
+                            <a id="{{id}}-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="sessionInfoIcon" title="Add to Calendar" src="images/icons/calendar.svg"></a>
+                            <div class="dropdown-menu calendar" aria-labelledby="{{id}}-btn">
+                              {{#each calendar}}
+                              <div class="dropdown-item">
+                                <a target="_blank" rel="nofollow" href="{{this}}">{{@key}}</a>
+                              </div>
+                              {{/each}}
+                            </div>
+                          </div>
+                          {{/if}}
+                          {{#if img}}
+                          <img src="{{img.src}}" title="{{img.title}}" class="float-right img-fluid" style="max-height: 50px">
+                          {{/if}}
+                        </h5>
+                        {{#if session_url}}
+                        <a class="btn customBtn-cool m-3" target="_blank" title="Session information" href="{{session_url}}">Info</a>
+                        {{/if}}
+                        {{#if youtubeUrl}}
+                        <a target="_blank" class="btn customBtn-cool m-3" href="{{youtubeUrl}}">YouTube</a>
+                        {{/if}}
+                        {{#if miscUrl}}
+                        <img src="images/party.png" target="_blank" style="width:48px" title="party icon by Oksana Latysheva, color added by Kay McKelly" alt="3 icons of people with streamers overhead">
+                        {{/if}}
+                        {{#if chatUrl}}
+                        <a class="btn customBtn-cool m-3" target="_blank" href="{{chatUrl}}">Chat</a>
+                        {{/if}}
+                        {{#if zoomUrl}}
+                        <a class="btn customBtn-cool m-3" target="_blank" href="{{zoomUrl}}">Zoom room</a>
+                        {{/if}}
+                        {{#if miscUrl}}
+                        <!-- NOTE: this is a total hack to show an image, but it's a hack that's quickly becoming permanent -->
+                        <a class="btn customBtn-cool m-3" target="misc" href="{{miscUrl.url}}">{{miscUrl.title}}</a>
+                        <img src="images/party.png" style="width:48px" title="party icon by Oksana Latysheva, color added by Kay McKelly" alt="3 icons of people with streamers overhead">
+                        {{/if}}
+                        {{#if moderator}}
+                        <p class="eventDescr">
+                          {{moderator}}
+                        </p>
+                        {{/if}}
+                        {{#each talks}}
+                        <p class="mutualEventTalkTitle">
+                          {{title}}
+                        </p>
+                        {{#if abstract}}
+                        <div>
+                          <a class="toggle-closed" data-toggle="collapse" href="#abstract-{{id}}" role="button" aria-expanded="false" aria-controls="abstract-{{id}}">
+                            Show abstract
+                          </a>
+                        </div>
+                        <div id="abstract-{{id}}" class="collapse mb-2 text-justify">
+                          {{{abstract}}}
+                        </div>
+                        {{/if}}
+                        <p class="eventDescr">
+                          {{#each authors}}
+                          <span class="authorName">{{this}}</span>
+                          {{/each}}
+                        </p>
+                        <p class="eventDescr">
+                          <span class="font-italic">{{affiliations}}</span>
+                        </p>
+                        {{#if paper}}
+                        <span class="talkMedia">
+                          Media: &nbsp;
+                        </span>
+                        <span class="talkMedia">
+                          &nbsp; <a target="_blank" href="{{paper}}"><img class="talkMediaIcon" src="images/icons/file.svg" title="Full paper"></a>
+                        </span>
+                        {{/if}}
+                        {{#if slidesUrl}}
+                        <span class="talkMedia">
+                          &nbsp; <a target="_blank" href="{{slidesUrl}}"><img class="talkMediaIcon" src="images/icons/presentation.svg" title="Slides"></a>
+                        </span>
+                        {{/if}}
+                        {{#if videoUrl}}
+                        <span class="talkMedia">
+                          &nbsp; <a target="_blank" href="{{videoUrl}}"><img class="talkMediaIcon" src="images/icons/video.svg" title="Video"></a>
+                        </span>
+                        {{/if}}
+                        {{/each}} <!-- end of talks -->
+                      </div> <!-- end of class session -->
+                    </div>
+                    {{/each}} <!-- end session loop -->
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          {{/each}}
+        </script>
+
+   </main>
+
+        <footer class="footer text-center">
+      <small>
+        Copyright &copy; 2021        <a href="https://ifca.ai/">Stichting Financial Cryptography</a> /
+        <span class="d-md-none"><a href="http://ifca.ai/">IFCA</a></span>
+        <span class="d-none d-md-inline"><a href="https://ifca.ai/">International Financial Cryptography Association</a></span>
+      </small>
+    </footer>
+    <script src="https://iacr.org/libs/js/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://iacr.org/libs/css/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Handlebars (necessary for program template) -->
+    <script src="https://iacr.org/libs/js/handlebars/handlebars-v4.1.0.js" type="text/javascript"></script>
+
+    <!-- Personal scripts -->
+    <script src="./js/tooltips.js"></script>
+    <script src="https://iacr.org/libs/js/luxon/luxon.js"></script>
+
+    <script src="./js/program.js?v=8"></script>
+
+    <script>
+      var DateTime = luxon.DateTime;
+      let now = DateTime.local();
+      document.getElementById('timezone').innerText = now.zoneName;
+      $(document).ready(function() {
+        var theTemplateScript = $("#program-template").html();
+        var theTemplate = Handlebars.compile(theTemplateScript);
+        // installProgram('/program.json', theTemplate, 'renderedProgram');
+      });
+    </script>
+
+  </body>
+</html>

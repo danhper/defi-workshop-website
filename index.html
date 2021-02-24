@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="/favicon.png" />
+
+    <!-- Generic bootstrap -->
+    <link
+      href="https://iacr.org/libs/css/bootstrap/confv2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link id="style" rel="stylesheet" href="/styles/teal_theme.css" />
+    <!-- metadata for googlebot -->
+    <script type="application/ld+json">
+      {
+        "@id": "https://fc21.ifca.ai/",
+        "@context": "http://schema.org/",
+        "@type": "Event",
+        "startDate": "Mar 5 2021",
+        "endDate": "Mar 5 2021",
+        "organizer": {
+          "@context": "http://schema.org",
+          "@type": "NGO",
+          "legalName": "International Financial Cryptography Association",
+          "alternateName": "IFCA",
+          "sameAs": "https://ifca.ai/",
+          "naics": "813920",
+          "logo": "https://fc21.ifca.ai/images/fc/ifca-logo.png"
+        },
+        "name": "DeFi21",
+        "image": "https://fc21.ifca.ai/images/fc/ifca-logo.png"
+      }
+    </script>
+    <!-- open graph for facebook. There is no type for event. -->
+    <meta property="og:type" content="event" />
+    <meta property="og:url" content="https://fc21.ifca.ai/defi" />
+    <meta property="event:start_time" content="Mar 5 2021" />
+    <meta property="event:end_time" content="Mar 5 2021" />
+    <meta
+      property="og:image"
+      content="https://fc21.ifca.ai/images/fc/ifca-logo.png"
+    />
+    <!-- apple format for iMessage and search -->
+    <link
+      rel="apple-touch-icon"
+      href="https://fc21.ifca.ai/images/fc/ifca-logo.png"
+    />
+    <meta property="og:title" content="DeFi'21 workshop" />
+    <meta property="og:description" content="1st Workshop on Decentralized Finance" />
+    <meta name="twitter:title" content="DeFi'21 workshop" />
+
+    <title>FC21 Program</title>
+    <style>
+      .session {
+        padding: 1rem;
+        background-color: rgba(177, 181, 231, 0.3);
+        margin-bottom: 8px;
+        margin-top: 8px;
+        text-align: center;
+        border-radius: 8px;
+      }
+      ul.nav .nav-link:hover {
+        background-color: #eeeeee;
+      }
+      div.dropdown-menu.calendar {
+        background-color: white;
+      }
+      div.dropdown-menu.calendar a {
+        color: #102a83;
+      }
+      /* TODO: better color? */
+      .specialSession {
+        background-color: cornsilk;
+      }
+      a.toggle-open:after {
+        content: " -";
+        font-weight: 800;
+      }
+      a.toggle-closed:after {
+        content: " ›";
+        font-weight: 800;
+      }
+      #scrollButtons {
+        width: 2rem;
+        position: sticky;
+        left: 0;
+        margin-left: -1.2rem;
+        bottom: 1.3rem;
+      }
+      #scrollSessionButton {
+        /*       display: none;*/
+      }
+      /* This was added to make it scroll below the
+        fixed top nav of the teal style. */
+      .timeSlotDiv {
+        scroll-margin-top: 5rem;
+        scroll-snap-margin-top: 5rem; /* because of iOS */
+      }
+      span.title {
+        font-weight: 600;
+      }
+      span.aff,
+      span.author {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- BEGIN nav -->
+    <div id="pageTop">
+      <header id="conf_id" class="headerImg">
+        <div class="headerGradient">
+          <div class="pageTopContainer">
+            <div
+              id="titlesLogoDiv"
+              class="d-flex justify-content-between align-items-center"
+            >
+              <div class="headerConferenceName">
+                <h1 class="headerTitle">
+                  1st Workshop on <br />Decentralized Finance (DeFi)
+                </h1>
+              </div>
+              <div class="headerInfo">
+                <a href="https://ifca.ai/">
+                  <img
+                    id="logo"
+                    class="d-none d-md-block mx-auto"
+                    src="images/fc/IFCA.png"
+                    title="International Financial Cryptography Association"
+                  />
+                </a>
+                <h3 class="headerInfoTop">March 5 2021, Virtual</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--      <div class="headerAttribution"></div>-->
+      </header>
+      <div id="main-nav-row" class="sticky-top">
+        <nav class="container navbar navbar-expand-md">
+          <button
+            class="navbar-toggler mt-1 collapsed nofocus"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-md-center"
+            id="navbarNav"
+          >
+            <ul id="nav-ul" class="navbar-nav">
+              <li class="nav-item mt-4 mt-md-0">
+                <a class="nav-link" href="https://fc21.ifca.ai/">FC 21</a>
+              </li>
+              <li class="nav-item mt-4 mt-md-0">
+                <a class="nav-link" href="/">Workshop Info</a>
+              </li>
+              <li class="nav-item mt-4 mt-md-0">
+                <a class="nav-link" href="/program.html">Program</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <noscript>
+      <div class="container">
+        <h2>This site is designed for browsers with javascript.</h2>
+      </div>
+    </noscript>
+    <!-- END OF nav -->
+
+    <main class="container p-4">
+      <h5>
+        In association with Financial Cryptography and Data Security 2021:
+        <a href="https://fc21.ifca.ai/">https://fc21.ifca.ai/</a>
+      </h5>
+      <h3 class="pageSubtitle">Date and Venue</h3>
+      <ul>
+        <li>Date: March 5, 2021</li>
+        <li>Venue: Online</li>
+      </ul>
+
+      <h3 class="pageSubtitle">Call for papers/talks</h3>
+      <p>
+        Our aim with this workshop is to solicit contributions from both
+        academia and industry, focused on addressing fundamental, timely and
+        important questions at the centre of DeFi. As such, we offer two
+        submission formats, as follows.
+      </p>
+      <ol>
+        <li>
+          A talk proposal (~2 pages). Include an abstract, title and the speaker
+          who will attend. Selected talk proposals will subsequently be invited
+          to submit a precis of the talk (~4 pages, excluding references and
+          appendices) in LNCS format for inclusion in the Workshop Proceedings.
+          The precis will not be subject to further review.
+        </li>
+        <li>
+          A short paper (~8 pages, excluding references and appendices) in LNCS
+          format.
+        </li>
+      </ol>
+      <p>
+        For either category of submission, we encourage submissions that seek to
+        elucidate or make progress towards solving the new and challenging
+        problems that emerge in the DeFi setting.
+      </p>
+
+      <p>
+        Researchers who wish to publish their full work elsewhere (e.g., in an
+        econ or finance journal) are encouraged to submit a talk proposal for
+        the workshop.
+      </p>
+      <p>Topics of particular interest are listed below:</p>
+      <ul>
+        <li>Incentive mechanisms in DeFi</li>
+        <li>Stability, risk, resilience, security of DeFi systems</li>
+        <li>Governance of DeFi systems</li>
+        <li>Scalability of DeFi protocols</li>
+        <li>DeFi composability</li>
+        <li>
+          DeFi attacks, attack techniques, and attack case studies (including
+          financial engineering attacks)
+        </li>
+        <li>Privacy and security of DeFi protocols</li>
+        <li>Game theory in decentralized applications</li>
+        <li>Empirical studies of DeFi</li>
+        <li>
+          Use and design of oracles in DeFi: price feeds and market impact
+          measures
+        </li>
+        <li>Stablecoins</li>
+        <li>Central Bank Digital Currencies (CBDCs)</li>
+        <li>Decentralized Exchanges, including Automated Market Makers</li>
+        <li>Economics of interoperability</li>
+        <li>Decentralized derivatives</li>
+        <li>Miner extractable value in DeFi</li>
+        <li>Token engineering</li>
+      </ul>
+      <p>
+        The workshop will additionally feature presentations from invited
+        speakers.
+      </p>
+
+      <h3 class="pageSubtitle">Important dates</h3>
+
+      <p>
+        We have two deadlines, corresponding to two review cycles. The
+        competetiveness of the second round will be affected by the number of
+        accepted submissions from the first round.
+      </p>
+
+      <p><strike>First submission deadline: December 15, 2020 AoE</strike></p>
+      <p><strike>Second submission deadline: January 15, 2021 AoE</strike></p>
+
+      <p>Author notification by: February 22, 2021 23:59 UTC</p>
+
+      <h3 class="pageSubtitle">Submission instructions</h3>
+      <p>
+          <strike>
+        Submit here:
+        <a href="https://easychair.org/conferences/?conf=defi21">link</a></strike>
+      </p>
+
+      <h3 class="pageSubtitle">Organizing Committee</h3>
+      <ul>
+        <li>Lewis Gudgeon, Imperial College London</li>
+        <li>Ariah Klages-Mundt, Cornell University</li>
+        <li>Daniel Perez, Imperial College London</li>
+        <li>Sam Werner, Imperial College London</li>
+      </ul>
+
+      <h3 class="pageSubtitle">Program Committee</h3>
+
+      <ul>
+        <li>Cuneyt Akcora, University of Manitoba</li>
+        <li>Raphael Auer, Bank for International Settlements</li>
+        <li>Tarun Chitra, Gauntlet Network</li>
+        <li>Martin Florian, Humboldt-Universität zu Berlin</li>
+        <li>Dominik Harz, Imperial College London</li>
+        <li>William Knottenbelt, Imperial College London</li>
+        <li>Jiasun Li, George Mason University</li>
+        <li>Benjamin Livshits, Imperial College London, Brave Software</li>
+        <li>Jun-You Liu, Cornell University</li>
+        <li>Patrick McCorry, anydot</li>
+        <li>Andrew Miller, University of Illinois, Urbana-Champaign</li>
+        <li>Andreea Minca, Cornell University</li>
+        <li>Daniel Moroz, Harvard University</li>
+        <li>David Parkes, Harvard University</li>
+        <li>Julien Prat, Centre national de la recherche scientifique</li>
+        <li>Tim Roughgarden, Columbia University</li>
+        <li>Alexei Zamyatin, Imperial College London</li>
+        <li>Fan Zhang, Chainlink</li>
+      </ul>
+
+      <h3 class="pageSubtitle">Contact</h3>
+      <p>
+        Enquiries can be sent to the Organizing Committee <a href="mailto:fcdefi2021@gmail.com">fcdefi2021@gmail.com</a>.
+      </p>
+    </main>
+
+    <footer class="footer text-center">
+      <small>
+        Copyright &copy; 2021
+        <a href="https://ifca.ai/">Stichting Financial Cryptography</a> /
+        <span class="d-md-none"><a href="http://ifca.ai/">IFCA</a></span>
+        <span class="d-none d-md-inline"
+          ><a href="https://ifca.ai/"
+            >International Financial Cryptography Association</a
+          ></span
+        >
+      </small>
+    </footer>
+    <script src="https://iacr.org/libs/js/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://iacr.org/libs/css/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Handlebars (necessary for program template) -->
+    <script
+      src="https://iacr.org/libs/js/handlebars/handlebars-v4.1.0.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- Personal scripts -->
+    <script src="./js/tooltips.js"></script>
+    <script src="https://iacr.org/libs/js/luxon/luxon.js"></script>
+  </body>
+</html>

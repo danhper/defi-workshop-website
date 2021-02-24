@@ -1,0 +1,203 @@
+/* Color palette by Kay McKelly: https://coolors.co/eef5f6-e9ab1c-2f8899-046577-102a83 and https://coolors.co/2e3192-50a4af-038273-046577-383db9 */
+
+
+
+/***** General styling *****/
+@font-face {
+  font-family: 'Busorama';
+  src: url('font/Busorama.eot'); /* IE9 Compat Modes */
+  src: url('font/Busorama.woff2') format('woff2'), /* Super Modern Browsers */
+       url('font/Busorama.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/Busorama.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+body {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url("../images/banners/ellipses.svg");
+  background-size: cover;
+}
+
+#pageTop {
+  /* equivalent of d-flex */
+  display: -ms-flexbox !important;
+  display: flex !important;
+  /* equivalent of flex-column-reverse */
+  -ms-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
+}
+
+
+
+/***** Nav (in /includes/nav.php) *****/
+#main-nav-row {
+  background-color: #046577;
+  /* emulated fixed-top */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+div.dropdown-menu {
+  background-color: #046577;
+  color: #FEFDFB;
+}
+
+a.dropdown-item {
+  color: #FEFDFB;
+}
+
+
+
+/***** Header (in /includes/nav.php) *****/
+/* stacks conf name atop dates & location */
+#titlesLogoDiv {
+  flex-direction: column;
+  padding-top: 1.2rem;
+}
+
+.headerTitle, .headerInfoTop, .headerInfoBottom {
+  color: #2E3192;
+}
+
+.headerTitle {
+  font-family: 'Busorama', sans-serif;
+  font-size: 1.7rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+div.headerInfo > h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* bumps titles down so they don't run into the navbar */
+.headerImg {
+  margin-top: 4.5rem;
+}
+
+/* custom font sizing for title so it doesn't run off the screen */
+/* bootstrap sm and up */
+@media (min-width: 576px) {
+  .headerTitle {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* taller img necessary for larger sizes */
+  div.headerInfo > h3 {
+    font-size: 1.8rem;
+    margin-top: 1.8rem;
+  }
+}
+
+.headerInfo #logo {
+  max-height: 5.5rem;
+}
+
+
+div.pageTopContainer {
+  position: relative;
+}
+
+
+
+/***** Main Content (e.g. h1-h6, a, text, etc) *****/
+main {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+a:hover {
+  color: #E9AB1C;
+}
+
+.indPageTitle, a {
+  color: #038273;
+}
+
+.pageSubtitle {
+  font-weight: normal;
+  color: #383DB9;
+}
+
+.subSubtitle {
+  color: #3C6D83;
+  font-weight: normal;
+}
+
+.dateTitle {
+  color: #046577;
+}
+
+.customBtn-warm {
+  background-color: rgba(203, 131, 30, 0.4);
+}
+
+.customBtn-cool {
+  background-color: rgba(4, 101, 119, 0.6);
+  color: #FEFDFB;
+}
+
+code {
+  color: #008577;
+}
+
+/* had to do these individually because some have strict spacing guidelines, some are way longer, etc */
+#nLogo {
+  max-height: 50px;
+}
+
+#iLogo {
+  max-height: 160px;
+}
+
+#plLogo {
+  max-width: 300px;
+}
+
+.contactLink {
+  color: #007830;
+  /* if too light, use #1F2161 */
+  font-size: 1.25rem;
+}
+
+
+
+/***** Main Content: cards & alerts *****/
+.customCard {
+  border: 1px solid rgba(203, 131, 30, 0.3);
+}
+
+.customCardHeader {
+  /* background-color: rgba(203, 131, 30, 0.4); */
+  background-color: rgba(148, 163, 166, 0.5);
+  color: #038273;
+}
+
+.customAlert-warm {
+  background-color: rgba(203, 131, 30, 0.2);
+  border-color: rgba(203, 131, 30, 0.5);
+}
+
+.customAlert-cool {
+  background-color: #D4E6E9;
+  border-color: #ABCED4;
+}
+
+icon {
+  filter: brightness(0) invert(31%) sepia(25%) saturate(4001%) hue-rotate(145deg) brightness(99%) contrast(101%);
+}
+
+.customCardFooter {
+  background-color: rgba(203, 131, 30, 0.1);
+}
+
+
+
+/* Footer */
+img.footerLogo {
+  max-height: 45px;
+}

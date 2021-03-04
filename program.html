@@ -270,6 +270,9 @@
                         {{#if youtubeUrl}}
                         <a target="_blank" class="btn customBtn-cool m-3" href="{{youtubeUrl}}">YouTube</a>
                         {{/if}}
+                        {{#if gatherTownUrl}}
+                        <a target="_blank" class="btn customBtn-cool m-3" href="{{gatherTownUrl}}">Gather Town</a>
+                        {{/if}}
                         {{#if miscUrl}}
                         <img src="images/party.png" target="_blank" style="width:48px" title="party icon by Oksana Latysheva, color added by Kay McKelly" alt="3 icons of people with streamers overhead">
                         {{/if}}
@@ -311,10 +314,12 @@
                         <p class="eventDescr">
                           <span class="font-italic">{{affiliations}}</span>
                         </p>
-                        {{#if paper}}
+                        {{#if hasMedia}}
                         <span class="talkMedia">
                           Media: &nbsp;
                         </span>
+                        {{/if}}
+                        {{#if paper}}
                         <span class="talkMedia">
                           &nbsp; <a target="_blank" href="{{paper}}"><img class="talkMediaIcon" src="images/icons/file.svg" title="Full paper"></a>
                         </span>

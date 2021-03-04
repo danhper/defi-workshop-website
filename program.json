@@ -24,7 +24,7 @@
         "talks": []
       }
     ],
-    "uniqueIDIndex": 31,
+    "uniqueIDIndex": 44,
     "timezone": {
       "name": "UTC",
       "abbr": "UTC"
@@ -40,21 +40,17 @@
           "sessions": [
             {
               "session_title": "Welcome and Keynote Introduction",
-              "location": {
-                "name": "Location TBD"
-              },
               "id": "session-1",
               "talks": [
                 {
                   "id": "talk-22",
                   "title": "Mariano Conti",
-                  "authors": [
-                    ""
-                  ],
+                  "authors": [""],
                   "affiliations": "ex MakerDAO",
                   "starttime": "14:05"
                 }
-              ]
+              ],
+              "moderator": "Chair: Daniel Perez"
             }
           ]
         },
@@ -63,7 +59,7 @@
           "starttime": "14:30",
           "sessions": [
             {
-              "moderator": "Chair: TBD",
+              "moderator": "Chair: Daniel Perez",
               "session_title": "Protocol Design",
               "talks": [
                 {
@@ -100,7 +96,47 @@
           "sessions": [
             {
               "id": "session-23",
-              "session_title": "Lightning Talks I"
+              "session_title": "Lightning Talks  (Protocol Design)",
+              "talks": [
+                {
+                  "id": "talk-37",
+                  "title": "Demystifying Pythia: A Survey of ChainLink Oracles Usage on Ethereum",
+                  "authors": [
+                    "Mudabbir Kaleem",
+                    "Dr. Weidong Shi"
+                  ],
+                  "affiliations": "University of Houston"
+                },
+                {
+                  "id": "talk-38",
+                  "title": "Trading on-chain: how feasible is regulators’ worst-case scenario?",
+                  "authors": [
+                    "Mahsa Moosavi"
+                  ],
+                  "hasMedia": true,
+                  "affiliations": "Concordia University",
+                  "videoUrl": "https://www.youtube.com/watch?v=I7HCd-SHLRQ&list=PL_aN0fSJkEsrPLG7PR0yE6xLaGiA68Cgr&index=1"
+                },
+                {
+                  "id": "talk-39",
+                  "title": "On Stablecoin Price Processes and Arbitrage",
+                  "authors": [
+                    "Ingolf Gunnar Anton Pernice"
+                  ],
+                  "affiliations": "Weizenbaum Institute"
+                },
+                {
+                  "id": "talk-40",
+                  "title": "Red-Black Coins",
+                  "authors": [
+                    "Mehdi Salehi"
+                  ],
+                  "affiliations": "Concordia University",
+                  "hasMedia": true,
+                  "videoUrl": "https://www.youtube.com/watch?v=yIkW2ZzLK7M&list=PL_aN0fSJkEsrPLG7PR0yE6xLaGiA68Cgr&index=7"
+                }
+              ],
+              "moderator": "Chair: Daniel Perez"
             }
           ]
         },
@@ -110,7 +146,8 @@
           "sessions": [
             {
               "id": "session-24",
-              "session_title": "Break and informal questions in rooms"
+              "session_title": "Break and informal questions in rooms",
+              "gatherTownUrl": "https://gather.town/i/fl0QXy6L"
             }
           ]
         },
@@ -142,9 +179,12 @@
                     "Omri Ross"
                   ],
                   "affiliations": "University of Copenhagen, Department of Computer Science",
-                  "starttime": "15:30"
+                  "starttime": "15:30",
+                  "hasMedia": true,
+                  "videoUrl": "https://www.youtube.com/watch?v=EicPSdoK8Js&list=PL_aN0fSJkEsrPLG7PR0yE6xLaGiA68Cgr&index=5"
                 }
-              ]
+              ],
+              "moderator": "Chair: Ariah Klages-Mundt"
             }
           ]
         },
@@ -164,7 +204,9 @@
                     "Yang Liu"
                   ],
                   "affiliations": "",
-                  "starttime": "15:40"
+                  "starttime": "15:40",
+                  "hasMedia": true,
+                  "videoUrl": "https://www.youtube.com/watch?v=zBCjgU5fhmg&list=PL_aN0fSJkEsrPLG7PR0yE6xLaGiA68Cgr&index=9"
                 },
                 {
                   "id": "talk-14",
@@ -176,9 +218,12 @@
                     "Jay Jie"
                   ],
                   "affiliations": "CertiK; University of California, Berkeley",
-                  "starttime": "15:50"
+                  "starttime": "15:50",
+                  "hasMedia": true,
+                  "videoUrl": "https://www.youtube.com/watch?v=VIhIOUPE39s&list=PL_aN0fSJkEsrPLG7PR0yE6xLaGiA68Cgr&index=8"
                 }
-              ]
+              ],
+              "moderator": "Chair: Ariah Klages-Mundt"
             }
           ]
         },
@@ -187,8 +232,35 @@
           "starttime": "16:00",
           "sessions": [
             {
-              "session_title": "Lightning Talks II",
-              "id": "session-10"
+              "session_title": "Lightning Talks II (Economics and Regulation)",
+              "id": "session-10",
+              "talks": [
+                {
+                  "id": "talk-32",
+                  "title": "Vertically Disintegrated Platforms",
+                  "authors": ["Christoph Aymanns"],
+                  "affiliations": "University of St. Gallen"
+                },
+                {
+                  "id": "talk-41",
+                  "title": "A Digital Currency Architecture for Privacy and Owner-Custodianship",
+                  "authors": ["Geoffrey Goodell"],
+                  "affiliations": "University College London\t"
+                },
+                {
+                  "id": "talk-33",
+                  "title": "DeFi as an Information Aggregator",
+                  "authors": ["Jiasun Li"],
+                  "affiliations": "George Mason University"
+                },
+                {
+                  "id": "talk-42",
+                  "title": "A Game-Theoretic Analysis of Cross-Ledger Swaps with Packetized Payments",
+                  "authors": ["Alevtina Dubovitskaya"],
+                  "affiliations": "Lucerne University of Applied Sciences and Arts"
+                }
+              ],
+              "moderator": "Chair: Ariah Klages-Mundt"
             }
           ]
         },
@@ -198,7 +270,8 @@
           "sessions": [
             {
               "id": "session-25",
-              "session_title": "Break and questions in discussion rooms"
+              "session_title": "Break and questions in discussion rooms",
+              "gatherTownUrl": "https://gather.town/i/fl0QXy6L"
             }
           ]
         },
@@ -212,14 +285,13 @@
               "talks": [
                 {
                   "id": "talk-28",
-                  "title": "Raphael Auer",
-                  "authors": [
-                    ""
-                  ],
+                  "title": "Permissioned Distributed Ledgers and the Governance of Money",
+                  "authors": ["Raphael Auer"],
                   "affiliations": "Bank for International Settlements",
                   "starttime": "16:30"
                 }
-              ]
+              ],
+              "moderator": "Chair: Sam Werner"
             }
           ]
         },
@@ -238,7 +310,9 @@
                     "Alex Manuskin"
                   ],
                   "affiliations": "ZenGo-X",
-                  "starttime": "16:50"
+                  "starttime": "16:50",
+                  "hasMedia": true,
+                  "videoUrl": "https://www.youtube.com/watch?v=diB5hPS-p0Q&list=PL_aN0fSJkEsrPLG7PR0yE6xLaGiA68Cgr&index=4"
                 },
                 {
                   "id": "talk-15",
@@ -247,7 +321,9 @@
                     "Klaus Kursawe"
                   ],
                   "affiliations": "",
-                  "starttime": "17:00"
+                  "starttime": "17:00",
+                  "hasMedia": true,
+                  "videoUrl": "https://www.youtube.com/watch?v=unQoeYOZadU&list=PL_aN0fSJkEsrPLG7PR0yE6xLaGiA68Cgr&index=6"
                 },
                 {
                   "id": "talk-16",
@@ -261,7 +337,8 @@
                   "affiliations": "",
                   "starttime": "17:10"
                 }
-              ]
+              ],
+              "moderator": "Chair: Sam Werner"
             }
           ]
         },
@@ -271,7 +348,44 @@
           "sessions": [
             {
               "id": "session-30",
-              "session_title": "Lightning Talks III"
+              "session_title": "Lightning Talks III (Attacks, MEV and more)",
+              "talks": [
+                {
+                  "id": "talk-35",
+                  "title": "Global order routing on exchange networks",
+                  "authors": [
+                    "Vincent Danos"
+                  ],
+                  "affiliations": "CNRS, DI ENS, PSL-ENS, INRIA"
+                },
+                {
+                  "id": "talk-36",
+                  "title": "Spoofing against Frontrunning",
+                  "authors": [
+                    "Tejaswi Nadahalli"
+                  ],
+                  "affiliations": "ETH Zurich"
+                },
+                {
+                  "id": "talk-44",
+                  "title": "Measuring Illicit Activity in DeFi: the case of Ethereum",
+                  "authors": [
+                    "Jiasun Li"
+                  ],
+                  "affiliations": "George Mason University\t"
+                },
+                {
+                  "id": "talk-43",
+                  "title": "Formal Methods in Decentralized Finance",
+                  "authors": [
+                    "James Hsin-yu Chiang"
+                  ],
+                  "affiliations": "DTU Compute, Technical University of Denmark",
+                  "hasMedia": true,
+                  "videoUrl": "https://www.youtube.com/watch?v=PvquGRCn-DQ&list=PL_aN0fSJkEsrPLG7PR0yE6xLaGiA68Cgr&index=3"
+                }
+              ],
+              "moderator": "Chair: Sam Werner"
             }
           ]
         },
@@ -281,7 +395,8 @@
           "sessions": [
             {
               "id": "session-31",
-              "session_title": "PANEL"
+              "session_title": "Panel: Tarun Chitra (Gauntlet), Robert Leshner (Compound), Andrew Miller (University of Illinois), Jeremy Musighi (Balancer)",
+              "moderator": "Chair: Lewis Gudgeon"
             }
           ]
         }
